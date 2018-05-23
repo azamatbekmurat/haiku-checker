@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Wed May 23 2018 09:27:39 GMT-0700 (PDT)
+// Generated on Mon May 21 2018 14:17:15 GMT-0700 (PDT)
 const webpackConfig = require('./webpack.config.js');
 module.exports = function(config) {
   config.set({
@@ -14,7 +14,7 @@ module.exports = function(config) {
 
 
     // list of files / patterns to load in the browser
-    files: [
+    files: [      
     'src/*.js',
     'spec/*spec.js'
     ],
