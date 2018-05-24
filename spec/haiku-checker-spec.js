@@ -20,8 +20,8 @@ describe ('haiku-checker', function() {
 
   it ('should test whether removes dipthong', function() {
     var haiku = new HaikuCheck();
-    expect(haiku.removeDiphthong("about me haikuu")).toEqual("abut me haku");
-    console.log("new " + haiku.removeDiphthong("about me haikuu"));
+    expect(haiku.removeDiphthong("about me haikuu")).toEqual("abut me hiku");
+    console.log("new " + haiku.removeDiphthong("about wht is going on haikuu"));
   });
 
 });
