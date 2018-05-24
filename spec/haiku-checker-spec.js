@@ -4,13 +4,13 @@ describe ('haiku-checker', function() {
   it ('should test whether string is haiku', function() {
     var haiku = new HaikuCheck("selectd item come", "selected haikudeded", "fived vaowels ine");
     console.log(haiku);
-    expect(haiku.checkHaiku()).toEqual("It is haiku");
+    expect(haiku.checkHaiku()).toEqual("This is a Haiku");
   });
 
   it ('should test whether string is not haiku', function() {
     var haiku = new HaikuCheck("selectd item", "haikiud", "vowels five");
     console.log(haiku);
-    expect(haiku.checkHaiku()).toEqual("Not haiku");
+    expect(haiku.checkHaiku()).toEqual("This is not a Haiku");
   });
 
   //checking removeSilentVowels function
