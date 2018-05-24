@@ -6,32 +6,6 @@ export class HaikuCheck {
     // debugger;
   }
 
-  //function to remove just Diphthong:
-  // removeDiphthong(row) {
-  //   var vowelss = ['a', 'e', 'i', 'o', 'u'];
-  //
-  //   var words = row.split(/\s+/);
-  //
-  //   var outputRow = [];
-  //
-  //   words.forEach(function(word) {
-  //     var numberOfLetters = word.length;
-  //
-  //     if (numberOfLetters > 2) {
-  //       for (var i = 0; i<=numberOfLetters; i++) {
-  //           if ((vowelss.indexOf(word.charAt(i)) !== -1) && (vowelss.indexOf(word.charAt(i+1)) !== -1)) {
-  //             word = word.replace(word.charAt(i), '');
-  //           }
-  //       }
-  //        outputRow.push(word);
-  //     } else {
-  //       outputRow.push(word);
-  //     }
-  //   })
-  //   var outputString = outputRow.join(" ");
-  //   return outputString;
-  // }
-
   removeSilentAndDiphthong(row) {
     var vowelss = ['a', 'e', 'i', 'o', 'u'];
 
@@ -57,40 +31,10 @@ export class HaikuCheck {
     return outputString;
   }
 
-
-  //function to remove just Diphthong:
-  // removeSilentVowels(row) {
-  //   var vowelss = ['a', 'e', 'i', 'o', 'u'];
-  //
-  //   var words = row.split(/\s+/);
-  //
-  //   var outputRow = [];
-  //
-  //   words.forEach(function(word) {
-  //     var numberOfLetters = word.length;
-  //
-  //     if (numberOfLetters > 2) {
-  //              vowelss.forEach(function(vowel) {
-  //                   if (word[numberOfLetters-1] == vowel) {
-  //                     word = word.replace(word[numberOfLetters-1], '');
-  //                   }
-  //             })
-  //             outputRow.push(word);
-  //
-  //     } else {
-  //       outputRow.push(word);
-  //     }
-  //
-  //   })
-  //   var outputString = outputRow.join(" ");
-  //   return outputString;
-  // }
-
-
   checkHaiku() {
 
-    var positive = "It is haiku";
-    var negative = "Not haiku";
+    var positive = "This is a is Haiku";
+    var negative = "This is not a Haiku";
     var vowels = ['a', 'e', 'i', 'o', 'u'];
     // var consonats = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
     // var arrRowOne = [];
@@ -141,3 +85,61 @@ export class HaikuCheck {
     }
   }
 }
+
+//Old Code Below
+
+
+
+//function to remove just Diphthong:
+// removeSilentVowels(row) {
+//   var vowelss = ['a', 'e', 'i', 'o', 'u'];
+//
+//   var words = row.split(/\s+/);
+//
+//   var outputRow = [];
+//
+//   words.forEach(function(word) {
+//     var numberOfLetters = word.length;
+//
+//     if (numberOfLetters > 2) {
+//              vowelss.forEach(function(vowel) {
+//                   if (word[numberOfLetters-1] == vowel) {
+//                     word = word.replace(word[numberOfLetters-1], '');
+//                   }
+//             })
+//             outputRow.push(word);
+//
+//     } else {
+//       outputRow.push(word);
+//     }
+//
+//   })
+//   var outputString = outputRow.join(" ");
+//   return outputString;
+// }
+
+//function to remove just Diphthong:
+// removeDiphthong(row) {
+//   var vowelss = ['a', 'e', 'i', 'o', 'u'];
+//
+//   var words = row.split(/\s+/);
+//
+//   var outputRow = [];
+//
+//   words.forEach(function(word) {
+//     var numberOfLetters = word.length;
+//
+//     if (numberOfLetters > 2) {
+//       for (var i = 0; i<=numberOfLetters; i++) {
+//           if ((vowelss.indexOf(word.charAt(i)) !== -1) && (vowelss.indexOf(word.charAt(i+1)) !== -1)) {
+//             word = word.replace(word.charAt(i), '');
+//           }
+//       }
+//        outputRow.push(word);
+//     } else {
+//       outputRow.push(word);
+//     }
+//   })
+//   var outputString = outputRow.join(" ");
+//   return outputString;
+// }
