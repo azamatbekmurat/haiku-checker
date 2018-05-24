@@ -18,17 +18,16 @@ export class HaikuCheck {
       var numberOfLetters = word.length;
 
       if (numberOfLetters > 2) {
-        for (var i = 0; i<numberOfLetters; i++) {
-          vowelss.forEach(function(vowel) {
-               if ((word.charAt(i) == vowel) && (word.charAt(i+1) == vowel)) {
-                 word = word.replace(word.charAt(i), '');
-               }
-         })
+        for (var i = 0; i<=numberOfLetters; i++) {
+            if ((vowelss.indexOf(word.charAt(i)) !== -1) && (vowelss.indexOf(word.charAt(i+1)) !== -1)) {
+              word = word.replace(word.charAt(i), '');
+            }
         }
          outputRow.push(word);
       } else {
         outputRow.push(word);
       }
+
 
     })
     var outputString = outputRow.join(" ");
