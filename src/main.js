@@ -12,7 +12,7 @@ $(document).ready(function() {
     var output = new HaikuCheck(rowOne, rowTwo, rowThree);
     output.checkHaiku();
 
-    $('ul#solution').append("<li>" + output.checkHaiku() + "</li>");
+    $('ul#solution').append("<h1>" + "<p>" + output.checkHaiku() + "</p>" + "</h1>");
 
   });
 });
