@@ -12,15 +12,20 @@
 
 </div>
     <h1>Haiku Checker</h1>
-    <label for="rowOne">Row One</label>
-    <input type="text" name="rowOne" value=""></input>
-    <br>
-    <label for="rowTwo">Row Two</label>
-    <input type="text" name="rowTwo" value=""></input>
-    <br>
-    <label for="rowThree">Row Three</label>
-    <input type="text" name="rowThree" value=""></input>
-    <br>
-    <button type="submit" class="btn btn-primary">Check</button>
+    <form id="haiku">
+      <label for="rowOne">Row One</label>
+      <input type="text" name="rowOne" id="rowOne"></input>
+      <br>
+      <label for="rowTwo">Row Two</label>
+      <input type="text" name="rowTwo" id="rowTwo"></input>
+      <br>
+      <label for="rowThree">Row Three</label>
+      <input type="text" name="rowThree" id="rowThree"></input>
+      <br>
+      <button type="submit" class="btn btn-primary">Check</button>
+    </form>
+    <h3>Output:</h3>
+    <ul id="solution">
+    </ul>
   </body>
 </html>
